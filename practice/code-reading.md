@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+- Because the variable is declared 2 times , first time declared outside of the function as a globale variable and 2nd time inside the function's scope which is prioritised over the global variable when they have the same name
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+- it will log 10 and then throw an error, x is a global variable and y is within scope of the function and cannot be used outside of it. 
 
 ## Question 3
 
@@ -62,3 +64,5 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+First 9, because f1 increments a parameter which is in that function's scope, not x (global variable). 
+Second { x: 10}, because objects are passed as references so the funtion modifies the original object
